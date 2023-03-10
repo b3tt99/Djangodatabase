@@ -8,6 +8,7 @@ class Student(models.Model):
     gender = models.CharField(max_length=50, blank=False, null=False)
     country = models.CharField(default='Kenya', max_length=50)
     city = models.CharField(default='Nairobi', max_length=50)
+    amount = models.CharField(default='0', max_length=6)
 
 def __str__(self):
     return self.name

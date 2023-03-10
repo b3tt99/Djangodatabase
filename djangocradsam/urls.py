@@ -25,7 +25,8 @@ urlpatterns = [
     path('edit/', views.edit_page, name='edit'),
     path('insert', views.insertData, name='insertData'),
     path('delete/<id>', views.deleteData, name='deleteData'),
-    path('update/<id>', views.updateData, name='updateData')
+    path('update/<id>', views.updateData, name='updateData'),
+    path('pay/<id>', views.pay, name='pay')
 
     ]
 
